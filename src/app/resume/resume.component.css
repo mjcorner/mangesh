@@ -1,0 +1,14 @@
+p{
+    margin-left: 20px;
+}
+h2{
+    display: inline-block;
+    background-color: skyblue;
+    padding: 20px;
+    margin-left: 500px;
+}
+button{
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+}

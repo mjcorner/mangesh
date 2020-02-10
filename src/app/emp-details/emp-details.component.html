@@ -1,0 +1,20 @@
+<div *ngIf="emp">
+
+  <div>
+  <button (click)="goback()"><</button>
+  <h1 align="center">Details of {{emp.name}} </h1>
+  </div>
+  <div>
+  <h2>Employee ID: {{emp.id}} </h2>
+  <a routerLink="/Resume/{{emp.id}}"><p align="right">Flip to Resume</p></a>
+  </div>
+  <hr>
+    <img align="left" src="../assets/emp.jfif">
+    <h3> Name    : {{emp.name}}</h3>
+    <h3> Address : {{emp.Address}}</h3>
+    <h3> Phone   : {{emp.Phone}}</h3>
+    <h3> Email   : {{emp.Email}}</h3>
+    <h3> Designation   : {{emp.Designation}}</h3>
+    <h3> Grade   : {{emp.Grade}}</h3>
+  <hr>
+</div>

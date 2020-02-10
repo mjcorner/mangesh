@@ -1,0 +1,11 @@
+<button (click)="goback()"><</button>
+<h2 align="center">Employee List</h2>
+
+<h3>  List of Employees</h3>
+<input type="search" [(ngModel)]="searchtext" placeholder="Search.." class="advancedSearchTextbox">
+<p></p>
+<table class="table table-hover" *ngFor="let emp of Empl | grdFilter: {name: searchtext,id:searchtext}">
+  
+      <td style="width: 10%;">{{emp.id}}</td>
+     <a routerLink="/empdetails/{{emp.id}}"><td>{{emp.name}}</td></a>
+</table>

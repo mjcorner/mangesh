@@ -1,0 +1,27 @@
+h1{
+    background-color: skyblue;
+    display: inline-block;
+    margin-left: 500px;
+}
+h2{
+    margin-left: 100px;
+    display: inline-block;
+}
+p{
+    display: inline-block;
+    margin-left: 900px;
+}
+h3{
+    margin-left: 500px;
+    
+}
+button{
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px;
+}
+img{
+    margin-left: 80px;
+    width: 15%;
+    height : 30%;
+}

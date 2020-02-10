@@ -1,0 +1,85 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+<div *ngIf="emp">
+
+  <div>
+  <button (click)="goback()"><</button>
+  <h2 align="center">Resume Of {{emp.name}} </h2>
+  </div>
+    <div class="tab">
+    <nav>
+    <button class="btn btn-info" (click)="getInfo(1)">Info</button>
+    <button class="btn btn-info" (click)="getInfo(2)">Project</button>
+    <button class="btn btn-info" (click)="getInfo(3)">Hobbies</button>
+    <button class="btn btn-info" (click)="getInfo(4)">Notes</button>
+    </nav>
+    </div>
+
+    <div *ngIf="Infovisible" >
+    
+        <p>Info Of {{emp.name}}</p>
+    </div>
+
+    <div *ngIf="Projectvisible">
+    
+        <p>Projects of {{emp.name}}</p> 
+    </div>
+
+    <div *ngIf="hobbiesvisible">
+    
+        <p>Hobbies of {{emp.name}}</p>
+    </div>
+
+    <div *ngIf="Notesvisible">
+    
+        <p>Notes of {{emp.name}}</p>
+    </div>
+
+
+</div>
+</body>
+</html> 
